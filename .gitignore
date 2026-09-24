@@ -1,0 +1,50 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Secrets and credentials
+secrets/
+credentials/
+*.pem
+*.key
+
+# Local Label Studio exports that may contain private data
+label-studio/exports/
+
+# Local results that may contain sensitive/private data
+results/private/
+
+# Local configuration
+config.local.*
