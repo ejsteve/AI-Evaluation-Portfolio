@@ -46,3 +46,10 @@ These results describe this small dataset only. They do not establish that one r
 The project includes the raw Label Studio annotation export, cleaning and validation scripts, processed CSV and JSONL files, annotation guidelines, dataset documentation, and evaluation statistics.
 
 To reproduce the analysis, follow the instructions in this repository and run the supplied Python scripts in sequence.
+## Project Case Study
+
+Read the full case study covering the evaluation methodology,
+annotation workflow, data processing, quality assurance, results,
+and limitations.
+
+[Read the Project Case Study](case-study/CASE_STUDY.md)
