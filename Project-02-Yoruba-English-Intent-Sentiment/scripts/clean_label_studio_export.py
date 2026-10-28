@@ -264,7 +264,11 @@ def main():
         "Automated checks verify structure, required fields, and allowed labels.",
         "They do not prove that Yoruba wording, English glosses, intent, or",
         "sentiment are linguistically or semantically correct.",
-        "Human review by a competent Yoruba speaker is still required.",
+        "A project-owner linguistic review is documented for Yoruba and",
+        "code-switched wording and English glosses in 12 records.",
+        "Seven English-only records were not reviewed in that pass.",
+        "Intent and sentiment labels have not been independently certified.",
+        "See reports/human_linguistic_review_report.txt for scope and limits.",
     ])
 
     REPORT_FILE.write_text("\n".join(report_lines) + "\n", encoding="utf-8")
