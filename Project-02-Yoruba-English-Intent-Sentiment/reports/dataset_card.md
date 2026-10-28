@@ -10,8 +10,7 @@ The project covers language identification, intent classification,
 sentiment classification, English gloss review, annotation notes, and
 automated structural validation.
 
-**Dataset status:** Provisional portfolio dataset; linguistic review
-remains outstanding.
+**Dataset status:** Provisional portfolio dataset; partial human linguistic review documented. Intent and sentiment labels have not been independently certified.
 
 ## 2. Intended Uses
 
@@ -35,8 +34,8 @@ The current processed dataset contains 20 examples.
 
 | Language category | Number of records |
 |---|---:|
-| English | 7 |
-| Yoruba | 10 |
+| English | 8 |
+| Yoruba | 9 |
 | Code-switched | 3 |
 | Total | 20 |
 
@@ -80,6 +79,7 @@ The workflow includes:
 - `data/processed/yoruba_english_annotated.csv`
 - `data/processed/yoruba_english_annotated.jsonl`
 - `reports/project2_quality_report.txt`
+- `reports/human_linguistic_review_report.txt`
 
 ## 5. Annotation Fields
 
@@ -95,6 +95,9 @@ The dataset includes:
 - `review_notes`: Notes about interpretation or uncertainty.
 - `annotation_status`: Processing status.
 - `validation_issues`: Issues reported by the automated checks.
+- `linguistic_review_status`: Status of the documented human linguistic review.
+- `linguistic_reviewer`: Reviewer recorded for the reviewed example.
+- `linguistic_review_date`: Date recorded for the review.
 
 The processed schema reflects the current cleaning script. Consult the
 actual CSV header before relying on these fields in downstream tools.
@@ -115,16 +118,13 @@ or English glosses are semantically correct.
 
 ## 7. Language Review and Limitations
 
-Yoruba wording, tone marks, context-dependent meanings, code-switching,
-and English glosses require review by a competent Yoruba speaker.
+The project owner, who is a Yoruba speaker, documented review of Yoruba and code-switched wording and English glosses for 12 records. One additional language-label correction was documented. Seven English-only records were not reviewed in this pass.
 
-The examples are synthetic and the dataset is small. It does not
-represent the full diversity of Yoruba dialects, writing conventions,
-speakers, or real-world customer conversations.
+The review metadata is recorded in the processed CSV and JSONL outputs. See `reports/human_linguistic_review_report.txt` for the review summary.
 
-The current dataset should not be described as linguistically validated.
-No independent inter-annotator agreement or model-performance results
-are claimed.
+This is partial human linguistic review, not independent validation of every annotation. Intent and sentiment labels have not been automatically or independently certified. No independent inter-annotator agreement or model-performance results are claimed.
+
+The examples are synthetic and the dataset is small. It does not represent the full diversity of Yoruba dialects, writing conventions, speakers, or real-world customer conversations.
 
 ## 8. Ethical and Privacy Considerations
 
@@ -140,7 +140,7 @@ generalize to real people or operational systems.
 Before using this dataset for model evaluation or publishing claims about
 Yoruba-language performance:
 
-1. Obtain competent Yoruba-speaker review of the source text and glosses.
+1. Complete any outstanding linguistic review appropriate to the intended use.
 2. Resolve uncertain language, intent, and sentiment labels.
 3. Document meaningful annotation changes.
 4. Expand the dataset with a clearly described sampling strategy.
