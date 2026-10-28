@@ -7,7 +7,7 @@ Tasks without completed annotations: 0
 Tasks with multiple annotations: 0
 Rows written: 20
 Rows passing automated checks: 20
-Rows needing review: 0
+Rows flagged by automated checks for review: 0
 Duplicate source IDs: None found
 
 LANGUAGE COUNTS
@@ -47,9 +47,14 @@ IMPORTANT LIMITATION
 --------------------
 Automated checks verify structure, required fields, and allowed labels.
 They do not prove that Yoruba wording, English glosses, intent, or
-sentiment are linguistically or semantically correct.
+sentiment are linguistically or semantically correct. Zero rows flagged
+means zero rows were flagged by this script's implemented checks; it does
+not mean that all semantic questions have been resolved.
 A project-owner linguistic review is documented for Yoruba and
 code-switched wording and English glosses in 12 records.
 Seven English-only records were not reviewed in that pass.
 Intent and sentiment labels have not been independently certified.
+A subsequent audit confirmed that the processed CSV and JSONL each
+contain 20 records with matching IDs and no mismatches in the compared
+annotation and review fields. This is structural consistency evidence only.
 See reports/human_linguistic_review_report.txt for scope and limits.

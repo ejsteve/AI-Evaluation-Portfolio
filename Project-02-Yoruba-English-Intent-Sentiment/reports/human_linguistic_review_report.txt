@@ -4,7 +4,7 @@ Review date: 2026-10-28
 Reviewer: Project owner — Yoruba speaker
 CSV records: 20
 JSONL records: 20
-Language-label correction count: 1
+Language-label confirmation/correction count: 1
 Yoruba/code-switched records with review confirmation: 12
 
 LANGUAGE COUNTS
@@ -21,8 +21,11 @@ not_reviewed_in_this_pass: 7
 
 Scope note:
 The project owner reported reviewing and confirming Yoruba wording
-and English glosses for Yoruba and code-switched records.
-Intent and sentiment labels were not automatically certified.
+and English glosses for 12 Yoruba/code-switched records. One additional
+record had its language label confirmed; that record is not counted as a
+full wording-and-gloss review in this report. Seven English-only records
+were not reviewed in this pass.
+Intent and sentiment labels were not independently certified.
 The existing annotation_status field remains an automated-check status.
 This script updated processed CSV and JSONL outputs only; it did not
 change the Label Studio source export or cleaning script.

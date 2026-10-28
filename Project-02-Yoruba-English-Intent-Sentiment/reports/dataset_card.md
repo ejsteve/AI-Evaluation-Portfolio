@@ -118,9 +118,9 @@ or English glosses are semantically correct.
 
 ## 7. Language Review and Limitations
 
-The project owner, who is a Yoruba speaker, documented review of Yoruba and code-switched wording and English glosses for 12 records. One additional language-label correction was documented. Seven English-only records were not reviewed in this pass.
+The project owner, who is a Yoruba speaker, documented review of Yoruba and code-switched wording and English glosses for 12 records. One additional record had its language label confirmed; this was a language-label confirmation, not a full wording-and-gloss review. Seven English-only records were not reviewed in this pass.
 
-The review metadata is recorded in the processed CSV and JSONL outputs. See `reports/human_linguistic_review_report.txt` for the review summary.
+The review metadata is recorded in the processed CSV and JSONL outputs. A subsequent audit confirmed that the CSV and JSONL each contain 20 records with matching IDs and no mismatches in the compared annotation and review fields. These are consistency checks, not independent proof of semantic correctness. See `reports/human_linguistic_review_report.txt` for the review summary.
 
 This is partial human linguistic review, not independent validation of every annotation. Intent and sentiment labels have not been automatically or independently certified. No independent inter-annotator agreement or model-performance results are claimed.
 
