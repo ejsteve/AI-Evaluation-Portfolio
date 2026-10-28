@@ -188,8 +188,7 @@ The current automated checks report:
 These checks do not prove that Yoruba text, English glosses, language
 labels, intents, or sentiment labels are semantically correct.
 
-A competent Yoruba speaker should review the Yoruba examples and glosses
-before the dataset is described as linguistically validated.
+A partial linguistic review is documented in `reports/human_linguistic_review_report.txt`: 12 Yoruba/code-switched records had their wording and English glosses reviewed by the project owner, who is a Yoruba speaker, and one additional record had its language label confirmed. Seven English-only records were not reviewed in that pass. Intent and sentiment labels have not been independently certified.
 
 See:
 
@@ -206,7 +205,7 @@ code-switching patterns, or real-world customer messages.
 
 The project does not claim:
 
-- Linguistic validation by a qualified Yoruba reviewer.
+- Complete independent linguistic validation of all records.
 - Independent inter-annotator agreement.
 - Representative sampling of Yoruba-language usage.
 - Measured model performance.
@@ -229,7 +228,7 @@ multilingual model quality or real-world customer behavior.
 
 ## Future Improvements
 
-- Complete competent Yoruba-speaker review.
+- Extend and document linguistic review to the remaining English-only records and independently verify intent and sentiment labels.
 - Resolve uncertain glosses and annotations.
 - Expand the dataset with a documented sampling strategy.
 - Collect independent annotations if agreement analysis is required.
