@@ -1,0 +1,56 @@
+
+<View>
+  <Header value="Yoruba-English Intent and Sentiment Evaluation"/>
+  <Text name="text" value="$text"/>
+
+  <Header value="1. Identify the language"/>
+  <Choices name="language" toName="text" choice="single" required="true">
+    <Choice value="English"/>
+    <Choice value="Yoruba"/>
+    <Choice value="code_switched"/>
+  </Choices>
+
+  <Header value="2. Identify the user's primary intent"/>
+  <Choices name="intent" toName="text" choice="single" required="true">
+    <Choice value="order_status"/>
+    <Choice value="payment_issue"/>
+    <Choice value="refund_request"/>
+    <Choice value="order_cancellation"/>
+    <Choice value="account_access"/>
+    <Choice value="technical_support"/>
+    <Choice value="product_inquiry"/>
+    <Choice value="product_feedback"/>
+    <Choice value="delivery_issue"/>
+    <Choice value="price_inquiry"/>
+    <Choice value="appreciation"/>
+    <Choice value="complaint"/>
+    <Choice value="service_feedback"/>
+    <Choice value="request_help"/>
+    <Choice value="general_inquiry"/>
+    <Choice value="other"/>
+  </Choices>
+
+  <Header value="3. Classify sentiment"/>
+  <Choices name="sentiment" toName="text" choice="single" required="true">
+    <Choice value="positive"/>
+    <Choice value="neutral"/>
+    <Choice value="negative"/>
+    <Choice value="mixed"/>
+  </Choices>
+
+  <Header value="4. Review the proposed English gloss"/>
+  <Text name="gloss" value="$english_gloss"/>
+  <Choices name="gloss_quality" toName="text" choice="single" required="true">
+    <Choice value="accurate"/>
+    <Choice value="needs_review"/>
+    <Choice value="uncertain"/>
+  </Choices>
+
+  <Header value="Reviewer notes (optional)"/>
+  <TextArea
+    name="review_notes"
+    toName="text"
+    rows="3"
+    placeholder="Explain ambiguity, translation concerns, or reasons for your decision."
+  />
+</View>

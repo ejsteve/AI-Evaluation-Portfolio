@@ -1,0 +1,51 @@
+PROJECT 2 — LABEL STUDIO DATA QUALITY REPORT
+================================================
+Input file: annotations\label_studio_export.json
+Tasks exported: 20
+Tasks with completed annotations: 20
+Tasks without completed annotations: 0
+Tasks with multiple annotations: 0
+Rows written: 20
+Rows passing automated checks: 20
+Rows needing review: 0
+Duplicate source IDs: None found
+
+LANGUAGE COUNTS
+--------------------
+English: 7
+Yoruba: 10
+code_switched: 3
+
+INTENT COUNTS
+--------------------
+account_access: 1
+appreciation: 2
+complaint: 2
+delivery_issue: 1
+general_inquiry: 1
+order_cancellation: 2
+order_status: 2
+price_inquiry: 1
+product_feedback: 2
+product_inquiry: 1
+refund_request: 1
+request_help: 1
+service_feedback: 2
+technical_support: 1
+
+SENTIMENT COUNTS
+--------------------
+mixed: 5
+negative: 5
+neutral: 7
+positive: 3
+
+VALIDATION ISSUE COUNTS
+----------------------------
+
+IMPORTANT LIMITATION
+--------------------
+Automated checks verify structure, required fields, and allowed labels.
+They do not prove that Yoruba wording, English glosses, intent, or
+sentiment are linguistically or semantically correct.
+Human review by a competent Yoruba speaker is still required.

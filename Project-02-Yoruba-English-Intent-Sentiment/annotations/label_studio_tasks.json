@@ -1,0 +1,142 @@
+[
+  {
+    "data": {
+      "source_id": "YOR001",
+      "text": "Good morning. How can I track my order?",
+      "english_gloss": "Good morning. How can I track my order?"
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR002",
+      "text": "Ẹ káàárọ̀, ẹ jọ̀ọ́ ẹ ràn mí lọ́wọ́.",
+      "english_gloss": "Good morning, please help me."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR003",
+      "text": "My money was deducted but I did not receive a receipt.",
+      "english_gloss": "My money was deducted but I did not receive a receipt."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR004",
+      "text": "Owó ti jáde ní àkáǹtì mi, ṣùgbọ́n mi ò rí ìwé-ẹ̀rí ìsanwó.",
+      "english_gloss": "Money was deducted from my account, but I did not receive a payment receipt."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR005",
+      "text": "Ẹ jọ̀ọ́, ẹ dá owó mi padà.",
+      "english_gloss": "Please refund my money."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR006",
+      "text": "Please cancel my order before it ships.",
+      "english_gloss": "Please cancel my order before it ships."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR007",
+      "text": "Mo fẹ́ fagilé order mi.",
+      "english_gloss": "I want to cancel my order."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR008",
+      "text": "Mi ò lè wọlé sí àkáǹtì mi.",
+      "english_gloss": "I cannot log in to my account."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR009",
+      "text": "This app kò ṣiṣẹ́ on my phone.",
+      "english_gloss": "This app does not work on my phone."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR010",
+      "text": "Does this phone come with a warranty?",
+      "english_gloss": "Does this phone come with a warranty?"
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR011",
+      "text": "Ẹ ṣé gan-an fún ìrànlọ́wọ́ yín.",
+      "english_gloss": "Thank you very much for your help."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR012",
+      "text": "Your support team solved my problem quickly. Thank you!",
+      "english_gloss": "Your support team solved my problem quickly. Thank you!"
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR013",
+      "text": "Ẹ kò tíì fi ọjà náà ránṣẹ́.",
+      "english_gloss": "You have not sent the item yet."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR014",
+      "text": "Abeg, ẹ check order mi.",
+      "english_gloss": "Please check my order."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR015",
+      "text": "How much does delivery cost?",
+      "english_gloss": "How much does delivery cost?"
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR016",
+      "text": "Ọjà yìí wù mí gan-an!",
+      "english_gloss": "I really like this product!"
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR017",
+      "text": "I like the product, but delivery was too slow.",
+      "english_gloss": "I like the product, but delivery was too slow."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR018",
+      "text": "Ẹ ṣe iṣẹ́ yín dáadáa, ṣùgbọ́n delivery pẹ́ jù.",
+      "english_gloss": "You did your work well, but delivery was too late."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR019",
+      "text": "I am unhappy with how my complaint was handled.",
+      "english_gloss": "I am unhappy with how my complaint was handled."
+    }
+  },
+  {
+    "data": {
+      "source_id": "YOR020",
+      "text": "Ẹ jọ̀ọ́, ẹ sọ fún mi nípa iṣẹ́ yín.",
+      "english_gloss": "Please tell me about your service."
+    }
+  }
+]

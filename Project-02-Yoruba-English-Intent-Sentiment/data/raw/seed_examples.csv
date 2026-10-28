@@ -1,0 +1,21 @@
+id,text,language,intent,sentiment,english_gloss
+YOR001,Good morning. How can I track my order?,English,order_status,neutral,Good morning. How can I track my order?
+YOR002,"Ẹ káàárọ̀, ẹ jọ̀ọ́ ẹ ràn mí lọ́wọ́.",Yoruba,request_help,neutral,"Good morning, please help me."
+YOR003,My money was deducted but I did not receive a receipt.,English,payment_issue,negative,My money was deducted but I did not receive a receipt.
+YOR004,"Owó ti jáde ní àkáǹtì mi, ṣùgbọ́n mi ò rí ìwé-ẹ̀rí ìsanwó.",Yoruba,payment_issue,negative,"Money was deducted from my account, but I did not receive a payment receipt."
+YOR005,"Ẹ jọ̀ọ́, ẹ dá owó mi padà.",Yoruba,refund_request,negative,Please refund my money.
+YOR006,Please cancel my order before it ships.,English,order_cancellation,neutral,Please cancel my order before it ships.
+YOR007,Mo fẹ́ fagilé order mi.,code_switched,order_cancellation,neutral,I want to cancel my order.
+YOR008,Mi ò lè wọlé sí àkáǹtì mi.,Yoruba,account_access,negative,I cannot log in to my account.
+YOR009,This app kò ṣiṣẹ́ on my phone.,code_switched,technical_support,negative,This app does not work on my phone.
+YOR010,Does this phone come with a warranty?,English,product_inquiry,neutral,Does this phone come with a warranty?
+YOR011,Ẹ ṣé gan-an fún ìrànlọ́wọ́ yín.,Yoruba,appreciation,positive,Thank you very much for your help.
+YOR012,Your support team solved my problem quickly. Thank you!,English,appreciation,positive,Your support team solved my problem quickly. Thank you!
+YOR013,Ẹ kò tíì fi ọjà náà ránṣẹ́.,Yoruba,delivery_issue,negative,You have not sent the item yet.
+YOR014,"Abeg, ẹ check order mi.",code_switched,order_status,neutral,Please check my order.
+YOR015,How much does delivery cost?,English,price_inquiry,neutral,How much does delivery cost?
+YOR016,Ọjà yìí wù mí gan-an!,Yoruba,product_feedback,positive,I really like this product!
+YOR017,"I like the product, but delivery was too slow.",English,service_feedback,mixed,"I like the product, but delivery was too slow."
+YOR018,"Ẹ ṣe iṣẹ́ yín dáadáa, ṣùgbọ́n delivery pẹ́ jù.",code_switched,service_feedback,mixed,"You did your work well, but delivery was too late."
+YOR019,I am unhappy with how my complaint was handled.,English,complaint,negative,I am unhappy with how my complaint was handled.
+YOR020,"Ẹ jọ̀ọ́, ẹ sọ fún mi nípa iṣẹ́ yín.",Yoruba,general_inquiry,neutral,Please tell me about your service.
