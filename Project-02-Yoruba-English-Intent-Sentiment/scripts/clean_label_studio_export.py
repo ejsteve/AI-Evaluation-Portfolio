@@ -27,7 +27,16 @@ DATA_FIELDS = [
     "sentiment", "gloss_quality", "review_notes"
 ]
 
-OUTPUT_FIELDS = DATA_FIELDS + ["annotation_status", "validation_issues"]
+REVIEW_FIELDS = [
+    "linguistic_review_status",
+    "linguistic_reviewer",
+    "linguistic_review_date",
+]
+
+OUTPUT_FIELDS = DATA_FIELDS + [
+    "annotation_status",
+    "validation_issues",
+] + REVIEW_FIELDS
 
 
 def extract_result(result_items):
@@ -82,6 +91,18 @@ def main():
     if not isinstance(tasks, list):
         raise ValueError("Expected the Label Studio export to be a JSON list.")
 
+    # Load prior processed records so human review metadata and
+    # reviewer-added notes survive a future rebuild.
+    previous_rows = {}
+    if CSV_FILE.exists():
+        with CSV_FILE.open(
+            "r", newline="", encoding="utf-8-sig"
+        ) as previous_file:
+            for previous_row in csv.DictReader(previous_file):
+                source_id = previous_row.get("source_id", "").strip()
+                if source_id:
+                    previous_rows[source_id] = previous_row
+
     rows = []
     issues_count = Counter()
     intent_counts = Counter()
@@ -115,6 +136,26 @@ def main():
             "gloss_quality": labels.get("gloss_quality", ""),
             "review_notes": labels.get("review_notes", ""),
         }
+
+        # Preserve human review metadata only when the reviewed text and
+        # English gloss are unchanged.
+        previous = previous_rows.get(row["source_id"], {})
+        same_reviewed_content = (
+            previous.get("text", "") == row["text"]
+            and previous.get("english_gloss", "") == row["english_gloss"]
+        )
+        review_status = (
+            previous.get("linguistic_review_status", "").strip()
+            if same_reviewed_content
+            else ""
+        )
+
+        for field in REVIEW_FIELDS:
+            row[field] = previous.get(field, "") if review_status else ""
+
+        # Keep reviewer-added notes only when the reviewed content is unchanged.
+        if review_status and previous.get("review_notes", "").strip():
+            row["review_notes"] = previous["review_notes"]
 
         problems = []
 

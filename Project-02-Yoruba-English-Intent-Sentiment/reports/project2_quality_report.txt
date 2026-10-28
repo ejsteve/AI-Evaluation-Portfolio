@@ -1,6 +1,6 @@
 PROJECT 2 — LABEL STUDIO DATA QUALITY REPORT
 ================================================
-Input file: annotations\label_studio_export.json
+Input file: annotations/label_studio_export.json
 Tasks exported: 20
 Tasks with completed annotations: 20
 Tasks without completed annotations: 0
@@ -12,8 +12,8 @@ Duplicate source IDs: None found
 
 LANGUAGE COUNTS
 --------------------
-English: 7
-Yoruba: 10
+English: 8
+Yoruba: 9
 code_switched: 3
 
 INTENT COUNTS
