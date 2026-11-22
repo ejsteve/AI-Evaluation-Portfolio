@@ -1,0 +1,18 @@
+{
+  "dataset": "data/raw/search_relevance_dataset.csv",
+  "query_count": 5,
+  "result_count": 20,
+  "relevance_threshold": 2,
+  "ranking_order": "CSV row order within each query",
+  "metrics": {
+    "precision_at_3": 0.4,
+    "ndcg_at_3": 0.8411,
+    "reciprocal_rank": 1.0
+  },
+  "limitations": [
+    "Demonstration dataset with five queries; not representative of live search traffic.",
+    "Row order is treated as ranking order and was not retrieved from a search engine.",
+    "Relevance labels have not been independently double-rated.",
+    "Metrics measure agreement with the supplied labels, not factual accuracy."
+  ]
+}
